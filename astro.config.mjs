@@ -7,6 +7,7 @@ export default defineConfig({
   integrations: [tailwind()],
   site: 'https://erden-ash.github.io',
   build: {
-    assetsPrefix: '.'
+    assetsPrefix: '.',
+    format: 'file',
   }
 });
