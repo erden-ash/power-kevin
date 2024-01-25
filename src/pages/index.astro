@@ -1,16 +1,22 @@
 ---
-
+	import Layout from '../layouts/Layout.astro'
+	const name = 'K-Pop'
+	const food = [
+		'Pizza',
+		'Pommes',
+		'Steak'
+	]
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Startseite">
+
+	<h1>OH HI {name} {name}{name}{name}{name}{name}{name}{name}KEVIN POWER ASTRO HYPER PAGEs</h1>
+	<a href="/about">geh zu about</a>
+
+	<div class="p-4 bg-red-500">
+		{food.map(current => <div class="font-bold">{current}</div>)}
+	</div>
+
+	<img class="max-w-sm" src="https://images.unsplash.com/photo-1706125356134-a20ea29b412b?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+
+</Layout>
